@@ -11,7 +11,7 @@ Model data is included in the `data` directory.
 ## Instructions
 1. Download `data` and `code` directories
 2. Set `data` as the working directory
-3. Download scRNA-seq data from ***, available here: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=***
+3. Download scRNA-seq data from xxx, available here: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=xxx
 4. Run each script in numerical order.  These scripts will generate the figures presented in our manuscript.\
 \
 NB: Expected total run time is 3-5 days
