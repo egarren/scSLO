@@ -1,6 +1,6 @@
 # scSLO
 
-This repository contains the code used in our single cell sequencing paper: "PD-L1 control germinal center dynamics"
+This repository contains the code used in our paper: "PD-L1 controls germinal center dynamics"
 
 ## Installation guide
 Install dependencies listed below
