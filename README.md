@@ -19,7 +19,7 @@ NB: Expected total run time is 3-5 days
 ## System requirements and software
 [cellranger](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/using/multi) v7.0.0
 
-<ins>Python (v3.7.4) packages</ins>\
+<ins>Python (v3.7.4) packages</ins>
 
 <ins>R (v4.1.1) packages</ins>\
 harmony_0.1.0\
