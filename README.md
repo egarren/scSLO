@@ -11,8 +11,14 @@ Model data is included in the `data` directory.
 ## Instructions
 1. Download `data` and `code` directories
 2. Set `data` as the working directory
-3. Download scRNA-seq data from xxx, available here: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=xxx
-4. Run each script in numerical order.  These scripts will generate the figures presented in our manuscript.\
+3. Download mouse peyer's patch scRNA-seq data from [xxx](xxxx)
+4. Download human tonsil scRNA-seq, scTCR-seq, and scBCR-seq data from [xxx](xxxx)
+5. Download mouse TFH and TFR bulk RNA-seq data from [xxx](xxxx)
+6. Download mouse TFH and TFR scRNA-seq data from [GSE157649](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE157649)
+7. Download mouse GCB scRNA-seq data from [GSE203132](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE203132)
+8. Download B6.Sle1yaa scRNA-seq data [GSE192762](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE192762)
+9. Download remaining mouse and human scRNA-seq data from sources listed in Table S1 and Table S2.
+10. Run each script in numerical order.  These scripts will generate the figures presented in our manuscript.\
 \
 NB: Expected total run time is 3-5 days
 
