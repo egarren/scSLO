@@ -1,0 +1,40 @@
+// Batch convert LSM files to colour composite and RGB
+//
+// This macro batch converts.lsm files to RGB and composite TIFF's
+// Using the channel colours from the LSM
+//
+
+// Ask user for source and destination folders
+// Source = dir1 and should only contain .lsm files
+// Destination = dir2 and should be different to dir1 and empty
+dir1 = getDirectory("Choose Source Directory ");
+dir2 = getDirectory("Choose Destination Directory ");
+
+// Create a list of files in the source folder dir1
+list = getFileList(dir1);
+
+// Set batch processing mode, false = show processing, true = blank screen
+setBatchMode(false);
+
+// Create for next loop for number of files (list.length) in source folder (dir1) = i
+for (i=0; i<list.length; i++) 
+{
+showProgress(i+1, list.length);
+
+// Open file number i from dir1
+
+open(dir1+list[i]);
+
+outputDirName = dir2+list[i];
+outputDirPath = outputDirName + File.separator;
+File.makeDirectory(outputDirName);
+
+run("Image Sequence... ", "save=["+outputDirPath+"] format=TIFF");
+
+
+// Tidy up
+close();
+
+
+// Next image 
+}

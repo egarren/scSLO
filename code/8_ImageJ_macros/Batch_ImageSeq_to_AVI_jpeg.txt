@@ -1,0 +1,57 @@
+// Batch convert LSM files to colour composite and RGB
+//
+// This macro batch converts.lsm files to RGB and composite TIFF's
+// Using the channel colours from the LSM
+//
+
+// Ask user for source and destination folders
+// Source = dir1 and should only contain .lsm files
+// Destination = dir2 and should be different to dir1 and empty
+dir1 = getDirectory("Choose Source Directory ");
+dir2 = getDirectory("Choose Destination Directory ");
+
+// Create a list of files in the source folder dir1
+list = getFileList(dir1);
+
+// Set batch processing mode, false = show processing, true = blank screen
+setBatchMode(false);
+
+// Create for next loop for number of files (list.length) in source folder (dir1) = i
+for (i=0; i<list.length; i++) 
+{
+showProgress(i+1, list.length);
+
+// Open file number i from dir1
+
+if (endsWith(list[i], "/")) {
+
+
+File.openSequence(dir1+list[i]);
+
+
+Stack.setXUnit("micron");
+run("Properties...", "pixel_width=0.795 pixel_height=0.795 voxel_depth=0.795");
+run("Scale Bar...", "width=20 height=20 thickness=2 font=10 bold hide overlay");
+
+Dialog.create("Time delta input");
+Dialog.addString("Time?","");
+Dialog.show();
+int=Dialog.getString();
+
+run("Label...", "format=00:00:00 starting=0 interval=&int x=1 y=1 font=7 text=[] use");
+
+new_name=replace(list[i],"/","");
+ext="_movie_pub.avi";
+f="compression=JPEG frame=5 save=["+dir2+new_name+ext+"]";
+run("AVI... ", f);
+
+// Tidy up
+close();
+
+}
+
+
+
+
+// Next image 
+}
