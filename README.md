@@ -11,8 +11,8 @@ Model data is included in the `data` directory.
 ## Instructions
 1. Download `data` and `code` directories
 2. Set `data` as the working directory
-3. Download mouse peyer's patch scRNA-seq data from [GSE260776]([xxxx](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE260776))
-4. Download human tonsil scRNA-seq data from [GSE262278]([xxxx](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE262278))
+3. Download mouse peyer's patch scRNA-seq data from [GSE260776](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE260776)
+4. Download human tonsil scRNA-seq data from [GSE262278](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE262278)
 5. Download mouse TFH and TFR bulk RNA-seq data from [xxx](xxxx)
 6. Download mouse TFH and TFR scRNA-seq data from [GSE157649](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE157649)
 7. Download mouse GCB scRNA-seq data from [GSE203132](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE203132)
