@@ -189,7 +189,7 @@ for(i in c("Naive_pdl1.DE","pd1.DE","pdl1.DE")){ #ls(pattern="DE")
     clusterProfiler::gseaplot(mkk2.table,geneSetID=mkk2.table$ID[1],title=mkk2.table$Description[1])
     ggsave2(paste0(i,".mkk2.plot.png"),width=6, height=9,device="png")
   }}
-  david.KEGG.table<-enrichDAVID(sigGenes,annotation="KEGG_PATHWAY",david.user="elliot_akama-garren@hms.harvard.edu") 
+  david.KEGG.table<-enrichDAVID(sigGenes,annotation="KEGG_PATHWAY",david.user="XXX") 
   if(!is.null(david.KEGG.table)){if(dim(david.KEGG.table)[1]!=0){
     david.KEGG.table<-setReadable(david.KEGG.table,OrgDb="org.Hs.eg.db",keyType="ENTREZID") 
     write.csv(david.KEGG.table,file=paste0(i,".david.kegg.table.csv"))
@@ -203,7 +203,7 @@ for(i in c("Naive_pdl1.DE","pd1.DE","pdl1.DE")){ #ls(pattern="DE")
     ggsave2(paste0(i,".david.KEGG.cnet.png"),width=10, height=8,device="png")
     pathview(gene.data = geneList, pathway.id = david.KEGG.table$ID[1], species = "hsa", out.suffix=paste0(i,".KEGGpath"))
   }}
-  david.BP.table<-enrichDAVID(sigGenes,annotation="GOTERM_BP_FAT",david.user="elliot_akama-garren@hms.harvard.edu")
+  david.BP.table<-enrichDAVID(sigGenes,annotation="GOTERM_BP_FAT",david.user="XXX")
   if(!is.null(david.BP.table)){if(dim(david.BP.table)[1]!=0){
     david.BP.table<-setReadable(david.BP.table,OrgDb="org.Hs.eg.db",keyType="ENTREZID")
     write.csv(david.BP.table,file=paste0(i,".david.BP.table.csv"))
