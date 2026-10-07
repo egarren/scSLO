@@ -1,6 +1,6 @@
 # scSLO
 
-This repository contains the code used in our paper: "PD-L1 controls germinal center dynamics"
+This repository contains the code used in our paper: "PD-L1 expression in germinal centers promotes humoral immunity by restricting T follicular regulatory cell differentiation"
 
 ## Installation guide
 Install dependencies listed below
